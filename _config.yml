@@ -2,9 +2,10 @@
 name: "爱上猪的肖大笨"
 title: "Thickheaded Xiao loves a pig"
 email: "upupxjg@gmail.com"
-description: "你是我记忆力永远的阳光"
+description: "你是我记忆里永远的阳光"
 baseurl: ""
 url: "http://upupxjg.github.io"
+timezone: Asia/Harbin
 
 # Build settings
 markdown: kramdown
