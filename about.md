@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About
+title: About Thickheaded Xiao
 permalink: /about/
 ---
+肖建刚，中国河北人，爱吃辣（可PK一般四川，湖南的朋友）火锅中毒、红烧肉中毒。
+最爱妈妈，爸爸，🐷和百威。
+80后末班车JAVA程序员，喜欢半夜摞代码（其实是被逼白天开狗屁会，然后慢慢习惯晚上来精神了）。
+目前坐标北京，喜欢研究各种技术（不限于计算机技术，还包括各种巴拉巴拉的奇葩技术）
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+以上
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
