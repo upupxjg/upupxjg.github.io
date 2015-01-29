@@ -5,8 +5,9 @@ email: "upupxjg@gmail.com"
 description: "你是我记忆里永远的阳光"
 baseurl: ""
 url: "http://upupxjg.github.io"
-timezone: Asia/Harbin
+#timezone: Asia/Harbin
 
 # Build settings
 markdown: kramdown
 permalinks: pretty
+username: upupxjg
