@@ -8,6 +8,7 @@ url: "http://upupxjg.github.io"
 #timezone: Asia/Harbin
 
 # Build settings
+highlighter: pygments
 markdown: kramdown
 permalinks: pretty
 username: upupxjg
