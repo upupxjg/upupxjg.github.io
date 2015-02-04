@@ -9,6 +9,6 @@ url: "http://upupxjg.github.io"
 
 # Build settings
 highlighter: pygments
-markdown: kramdown
+markdown: redcarpet
 permalinks: pretty
 username: upupxjg
