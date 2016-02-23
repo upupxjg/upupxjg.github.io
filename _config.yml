@@ -1,14 +1,24 @@
 # Site settings
-name: "爱上猪的肖大笨"
+name: "Thickheaded Xiao's Blog"
 title: "Thickheaded Xiao loves a pig"
 email: "upupxjg@gmail.com"
 description: "你是我记忆里永远的阳光"
 baseurl: ""
-url: "http://upupxjg.github.io"
-#timezone: Asia/Harbin
+#baseurl: "http://www.thicchkeaded.me"
+url: "http://www.thickheaded.me"
+timezone: Asia/Harbin
+imgurl: "http://7u2r8q.com1.z0.glb.clouddn.com/img"
 
 # Build settings
 highlighter: pygments
 markdown: redcarpet
 permalinks: pretty
-username: upupxjg
+username: thickheaded_xiao
+
+
+defaults: 
+  -
+    scope:
+        path: ""
+    values:
+        author: "Thickheaded Xiao"

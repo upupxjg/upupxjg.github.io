@@ -1,0 +1,102 @@
+---
+title: markdown学习笔记2——语法篇
+layout: post
+---
+
+##标题
+markdown设置标题的方式非常简单，head1~head6只需要在对应行的开头加‘#’即可  
+`#head1`  
+`##head2`  
+`###head3`  
+`####head4`  
+`#####head5`  
+`######head6`  
+
+效果如下  
+>#head1
+>##head2
+>###head3
+>####head4
+>#####head5
+>######head6
+
+##强调
+强调包括 *斜体*、**粗体**、和***斜粗体*** 在markdown中，他们分别这样表示：  
+`*斜体*`  
+`**粗体**`  
+`***斜粗体***`  
+  
+效果如下  
+*斜体*  
+**粗体**  
+***斜粗体***  
+
+##引用
+当需要引入一段话的时候，就需要用到引用，引用在markdown中使用 ‘>’ 表示：  
+`>这是一条引用`  
+`>>这是一条嵌套引用 `    
+效果如下：  
+>这是一条引用  
+>>这是一条嵌套引用
+
+引用结束需要空一行
+
+##列表
+有序列表为  
+`1. 1111111111`  
+ `2. 2222222222`  
+ `3. 3333333333`  
+无须列表为  
+`* asdfaf`  
+`* adsfasdf`  
+`* sadfsdafdas`  
+`* sadfdasfds`  
+效果：  
+1. 111111111111  
+2. 222222222222  
+3. 333333333333 
+
+* asdfasfa  
+* asddfasdfasfda
+* adfsadfasfsadfadsf
+
+##连接和图片
+`[baidu](http://www.baidu.com)`  
+`![img1](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png)`    
+
+还可以用另一种别名的方式  
+
+`[baidu][baidurl]`  
+`![img][baidulogo]`  
+`[baidurl]:http://www.baidu.com`  
+`[baidulogo]:https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png`  
+
+效果：  
+[baidu](http://www.baidu.com)  
+![img1](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png)  
+[baidu][baidurl]  
+![img2][baidulogo]
+
+[baidurl]:http://www.baidu.com
+[baidulogo]:https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png
+
+##代码段
+当需要插入一段代码或者一段不需要被complie的东西的时候，就需要代码段的帮助，本文的所有示例代码都是通过代码段完成的，代码段在markdown中是两个反引号（\`, 一般在键盘上ESC键下面的那货)括起来的部分。  或者三个反引号（\`\`\`),或者一个Tab或者连续四个空格，那种都OK了啦。
+
+``` 
+public static void main(String args[]){
+    System.out.println("Hello world!");
+}
+```
+
+#表格
+表格。。还是算了吧。。。，如果你非要用
+
+```
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+上表出自[here](http://www.jianshu.com/p/1e402922ee32/)
