@@ -48,3 +48,31 @@ Alfred不做过多介绍，总之很NB就是了。
 
 ### Alfred workflow设置
 
+关于Alfred，可以看一下这篇[知乎贴](https://www.zhihu.com/question/20656680)
+
+下面我们正式开始，首先整理一下思路，要做的第一件事(当然是新建一个workflow）就是选定我们要上传的文件，这个可以通过Alfred的Input->File Filter实现，File Filter会返回选定文件的地址，传给下一个Unit，得到了文件地址，我们需要做的就是调用七牛的qrsctl工具把文件上传，这里我们通过Alfred的Action->Run Script实现，上传完后我们就可以把文件的URL放到剪贴板，同时提醒已经上传成功，这里需要用到Output->copy to clipboard和Output->post notification。  
+下面我们就来具体看一下每一个步骤。
+
+
+### 1. 新建一个workflow
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160302-1@2x.png)
+
+如图，点击*+*，然后按下图输入必要的信息  
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160302-0%402x.png)
+
+### 2. 新建Input -> File Filter
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160302-2@2x.png)
+
+然后切换到第二个选项卡，选择要扫描的文件路径,直接把文件夹拖进去就OK  
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160302-3@2x.png)
+
+点击Save，第一步就完成了，可以呼出Alfred看看是否生效
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160302-4@2x.png)
+
+Bingo!不过目前这个workflow还没有任何的响应，下面我们就来添加一个Action。
+
