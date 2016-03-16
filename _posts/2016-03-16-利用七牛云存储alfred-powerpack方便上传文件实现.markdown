@@ -76,3 +76,75 @@ Alfred不做过多介绍，总之很NB就是了。
 
 Bingo!不过目前这个workflow还没有任何的响应，下面我们就来添加一个Action。
 
+### 3. 新建Run Script Action
+
+点击右上角的加号，选择Action->Run Script
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/kaizhao1.png)
+
+会出现如下界面
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160316-0@2x.png)
+
+点击*open workflow folder*
+
+将七牛的命令行工具*qrsctl*拷贝到这个目录下面，然后新建一个脚本文件*put2remote*  
+并写入以下内容
+
+``` bash
+#!/bin/bash
+
+file=$1
+if [ -z "$file" ];then
+    exit 1
+fi
+name=${file##*/}
+
+#login to qiniu
+
+if [ -f "$file" ];then
+    ./qrsctl login ${yourkey} ${yourkey2}    
+    ./qrsctl put xlogcdn $name $1 >/dev/null
+    echo $name
+else
+    echo "file not exist"
+    exit 1
+fi
+
+```
+
+然后赋予可执行权限，方法是打开终端，在终端输入'chmod +x',然后将*put2remote*文件拖如终端，回车  
+
+然后回到Action的界面，在里面输入以下内容
+
+``` bash
+
+query="{query}"
+
+./put2remote $query
+
+``` 
+
+Run Script Action会讲脚本的标准输出作为返回。
+
+### 4. 获取上传文件的URL
+
+因为七牛这个蛋疼的工具是不会直接把上传的文件的URL返回的，其实URL就是七牛默认给你的域名URL+/+文件名，所以我们首先要知道自己的域名URL是什么。最简单的方法就是去七牛的网站随便上传个图片，打开他，然后在浏览器的地址栏就可以找到URL了，找到url后，我们要做的就是让Alfred帮我们把url和文件名拼起来并且放到剪贴板里，同时提示我们上传成功！
+
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160316-1@2x.png)
+
+与新建Action一样，点击+，然后选择Output-> copy to clipboard,然后在得到的页面中输入你的URL+/+{query}，然后save。
+
+### 5. 大功告成
+
+现在我们只需要把刚刚的三个Action串起来，All done！
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160316-2@2x.png)
+![img](http://7u2r8q.com1.z0.glb.clouddn.com/QQ20160316-4@2x.png)
+
+
+  
+
+
+赶紧打开Alfred试试吧！
+
+
