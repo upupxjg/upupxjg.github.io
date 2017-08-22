@@ -1,6 +1,0 @@
----
-title: 【转载】如何让vim粘贴的缩进变正确
-layout: post 
----
-
-[a way by Marcin Kulik](https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode)
