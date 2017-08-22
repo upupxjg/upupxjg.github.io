@@ -90,3 +90,10 @@ deploy:
     #ignore_hidden: false
     #ignore_pattern:
     #    public: .
+
+algolia:
+  applicationID: '58UE9N8MKH'
+  apiKey: 'b399fed96dd597b7f1461dab9771cf4b'
+  adminApiKey: 'f6522e5c5ea1d0ff3663b01f432f9d3a'
+  indexName: 'thickheaded.me.index'
+  chunkSize: 5000
