@@ -80,6 +80,9 @@ deploy:
   - type: git
     repo: https://github.com/upupxjg/upupxjg.github.io.git
     branch: master
+  - type: git
+    repo: git@yumumu.space:/home/git/hexo.git
+    branch: master
     #  - type: git
     #repo: git@git.coding.net:upupxjg/upupxjg.coding.me.git
     #branch: hexo
