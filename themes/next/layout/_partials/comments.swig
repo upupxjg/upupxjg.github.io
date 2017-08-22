@@ -4,7 +4,7 @@
 	<script>
 		var disq = new iDisqus('comments', {
 			forum: 'thickheadedx',
-			site: "https://thickheaded.me"
+			site: "https://thickheaded.me",
 			api: 'https://www.yumumu.space/disqus-proxy',
 			mode: 1,
 			timeout: 3000,

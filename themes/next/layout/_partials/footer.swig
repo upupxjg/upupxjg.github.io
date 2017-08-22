@@ -34,13 +34,10 @@
       NexT.{{ theme.scheme }}
     </a>
   </div>
-
-  <span class="post-meta-divider">|</span>
-
-  <div class="powered-by">
-      Hosted by 
-      <a class="theme-link" href="https://pages.coding.me">
-          Coding Pages
-      </a>
-  </div>
 {% endif %}
+<script type="text/javascript" id="hexo.nprogress">
+  NProgress.configure({ trickleSpeed: 80 });
+  NProgress.start();
+  NProgress.set(0.4);
+  $(document).ready(function(){NProgress.done();})
+</script>
