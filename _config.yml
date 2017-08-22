@@ -90,22 +90,3 @@ deploy:
     #ignore_hidden: false
     #ignore_pattern:
     #    public: .
-# Qiniu
-qiniu:
-  offline: false
-  sync: true
-  bucket: hexocdn
-  access_key: 3g_Gyt7il49AjwLDscsO_8HriIms6rTR88cwzxZY
-  secret_key: 5C917m0orIXSyJlRwNsUrTspyWZuAhMvn8EBPPAu
-  dirPrefix: static
-  urlPrefix: http://ourtakq6u.bkt.clouddn.com/static
-  up_host: http://up-z1.qiniu.com
-  local_dir: static
-  update_exist: true
-  image:
-    folder: images
-    extend:
-  js:
-    folder: js
-  css:
-    folder: css
