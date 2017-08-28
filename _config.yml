@@ -100,3 +100,17 @@ algolia:
   adminApiKey: 'f6522e5c5ea1d0ff3663b01f432f9d3a'
   indexName: 'thickheaded.me.index'
   chunkSize: 5000
+
+qiniu:
+  offline: false
+  sync: true
+  bucket: hexocdn
+  secret_file: sec/qn.json 
+  dirprefix: static
+  urlPrefix: https://static.thickheaded.me/static
+  up_host: http://up-z1.qiniu.com
+  local_dir: static
+  update_exist: false
+  image:
+      folder: images
+      extend: -common
