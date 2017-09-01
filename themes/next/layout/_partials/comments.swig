@@ -1,15 +1,12 @@
 {% if page.comments %}
-	<div class="comments" id="comments"></div>
-	<script src="/static/iDisqus.min.js"></script>
-	<script>
-		var disq = new iDisqus('comments', {
-			forum: 'thickheadedx',
-			site: "https://thickheaded.me",
-			api: 'https://www.yumumu.space/disqus-proxy',
-			mode: 1,
-			timeout: 3000,
-			init: true
-		});
-	</script>
-	<link rel="stylesheet" href="/static/iDisqus.min.css">
+    <!--PC和WAP自适应版-->
+    <div class="comments" id="SOHUCS" sid="document.location.pathname" ></div> 
+    <script type="text/javascript"> 
+        (function(){ 
+        var appid = 'cytc2ibuA'; 
+        var conf = 'prod_219cb8bbfd11337220be1d1ba769c0c6'; 
+        var width = window.innerWidth || document.documentElement.clientWidth; 
+        if (width < 960) { 
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
+    </script>
 {% endif %}
