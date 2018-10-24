@@ -78,7 +78,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://github.com/upupxjg/upupxjg.github.io.git
+    repo: git@github.com:upupxjg/upupxjg.github.io.git
+    #repo: https://github.com/upupxjg/upupxjg.github.io.git
     branch: master
     #  - type: git
     #repo: git@git.coding.net:upupxjg/upupxjg.coding.me.git
